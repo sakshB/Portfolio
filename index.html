@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0,33);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4,55) ;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstSection >div{
+            width: 30%;
+            align-content: center;
+            
+        }   
+            
+        .leftSection{
+            font-size: 2.5rem;
+           margin: 100px;
+        }  
+
+        .leftSection .buttons{
+           padding: 50px 0;
+        }  
+
+        .leftSection .btn{
+           padding: 12px;
+           background: #208c96;
+           color: white;
+           border: 2px solid white;
+           border-radius: 7px;
+           font-size: 20px;
+           cursor: pointer;
+        }  
+
+        .leftSection .btn:hover{
+            color: aquamarine;
+            font-size: 1.5rem;
+
+        }
+        
+        .rightSection img{
+            width: 100%;
+            margin: 40px;
+        
+        }  
+        
+        .purple{
+            color: aqua;
+        }
+
+        nav ul li a{
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: aqua;
+            font-size: 1.1rem;
+        }
+            
+        .para{
+            font-size: 20px;
+        }  
+        
+
+        footer{
+            background-color: rgb(1, 1, 63);
+            height: 150px;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-between;
+        }
+        
+        footer ul li{
+            list-style: none;
+        }
+
+        .social{
+             font-size: 20px;
+             color: aqua;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+
+        .text-movement:hover{
+            color: rgb(39, 154, 116);
+            font-size: 1.04rem;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Saksham's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html" target="_parent">Home</a></li>
+                    <li><a href="about.html" target="_parent">About</a></li>                                                                             
+                    <li><a href="CERTIFICATES.pdf" target="_blank">Certificates</a></li>
+                    <li><a href="mailto:sakshambansal.ai26@jecrc.ac.in">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey,
+                My name is <span class="purple"><b>Saksham</b></span> 
+                <p class="para">Welcome to my creative world! Explore a journey of innovation and design excellence.</p>
+                <br>
+                <div>It's all about</div>
+                <span id="element" style="color: cyan;"></span>
+                <div class="buttons">
+                    <a href="" target="_blank"><button class="btn">Resume</button></a>
+                    <a href="https://github.com/sakshB" target="_blank"><button class="btn">Github</button></a>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="profile.png" alt="developer png">
+            </div>
+        </section>
+       
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2 style="color: aqua;">Saksham's Portfolio</h2>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li class="social"><b>Social</b></li>
+                    <a href="https://www.linkedin.com/in/saksham-bansal-981082293/" target="_blank"><li class="text-movement"  style="color: white;">LinkedIn</li></a>
+                    <a href="https://www.instagram.com/_sakshamb/" target="_blank"><li class="text-movement" style="color: white;">Instagram</li></a>
+                    <a href="https://www.youtube.com/channel/UCvictav3281NPUWP_D1oyzw" target="_blank"><li class="text-movement" style="color: white;">YouTube</li></a>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li class="social"><b>Contact</b></li>
+                    <li>8209999094</li>
+                    <li><a href="mailto:sakshambansal.ai26@jecrc.ac.in">sakshambansal.ai26@jecrc.ac.in</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['FRONTEND', 'BACKEND','Web Design','WEB DEVELOPMENT'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
